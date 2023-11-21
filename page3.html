@@ -13,14 +13,13 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header">
-						<h1>밤의 팔레트</h1>
-						<p>Ipsum dolor sit amet nullam</p>
+						<h1>당신은 첫눈입니까</h1>
+						<p>- 이규리 시집 -</p>
 					</header>
 
 				<!-- Main -->
@@ -29,11 +28,31 @@
 						<!-- Content -->
 							<section id="content" class="main">
 								<span class="image main"><img src="images/page3banner.png" alt="" /></span>
-								<h2>Magna feugiat lorem</h2>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
-								<p>Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Consequat leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit enim turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet est velit quis lorem.</p>
-								<h2>Tempus veroeros</h2>
-								<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+								<p>[당신은 첫눈입니까]<br><br>무력함과 쓸쓸함을 고요하고 담담하게 풀어낸 노래. 정답을 알면서도 외면하는 현대인들의 무력함을 담담한 글자들의 배열로 되물어오는 시집.
+								</p>
+								<div class="accordion">김재연 금쪽이</div>
+								<div class="accordion-content">
+									<iframe width="100%" height="600" src="3_k.pdf#toolbar=0&navpane=0"></iframe>
+								</div>
+
+								<div class="accordion">신준규 금쪽이</div>
+								<div class="accordion-content">
+									<iframe width="100%" height="600" src="3_s.pdf#toolbar=0&navpane=0"></iframe>
+								</div>
+
+								<div class="accordion">전세연 금쪽이</div>
+								<div class="accordion-content">
+									<iframe width="100%" height="600" src="3_j.pdf#toolbar=0&navpane=0"></iframe>
+								</div>
+
+								<div class="accordion">현승혁 금쪽이</div>
+								<div class="accordion-content">
+									<iframe width="100%" height="600" src="3_h.pdf#toolbar=0&navpane=0"></iframe>
+								</div>
+								<br><br>
+								<ul class="actions special">
+									<li><a href="index.html" class="button">메인 페이지로</a></li>
+								</ul>
 							</section>
 
 					</div>
@@ -59,13 +78,27 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			// JavaScript to toggle content when accordion is clicked
+			const accordions = document.querySelectorAll(".accordion");
+	
+			accordions.forEach((accordion) => {
+				accordion.addEventListener("click", function () {
+					const content = this.nextElementSibling;
+					if (content.style.display === "block") {
+						content.style.display = "none";
+					} else {
+						content.style.display = "block";
+					}
+				});
+			});
+		</script>
+</body>
 </html>
